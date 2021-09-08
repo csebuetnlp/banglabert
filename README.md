@@ -88,23 +88,14 @@ Contents of this repository are restricted to non-commercial research purposes o
 ## Citation
 If you use any of the datasets, models or code modules, please cite the following paper:
 ```
-@article{DBLP:journals/corr/abs-2101-00204,
-  author    = {Abhik Bhattacharjee and
-               Tahmid Hasan and
-               Kazi Samin and
-               M. Sohel Rahman and
-               Anindya Iqbal and
-               Rifat Shahriyar},
-  title     = {BanglaBERT: Combating Embedding Barrier for Low-Resource Language
-               Understanding},
+@article{bhattacharjee2021banglabert,
+  author    = {Abhik Bhattacharjee and Tahmid Hasan and Kazi Samin and Md Saiful Islam and M. Sohel Rahman and Anindya Iqbal and Rifat Shahriyar},
+  title     = {BanglaBERT: Combating Embedding Barrier in Multilingual Models for Low-Resource Language Understanding},
   journal   = {CoRR},
   volume    = {abs/2101.00204},
   year      = {2021},
   url       = {https://arxiv.org/abs/2101.00204},
   eprinttype = {arXiv},
-  eprint    = {2101.00204},
-  timestamp = {Thu, 21 Jan 2021 14:42:30 +0100},
-  biburl    = {https://dblp.org/rec/journals/corr/abs-2101-00204.bib},
-  bibsource = {dblp computer science bibliography, https://dblp.org}
+  eprint    = {2101.00204}
 }
 ```
