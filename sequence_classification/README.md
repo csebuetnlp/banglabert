@@ -1,0 +1,63 @@
+## Data format
+
+The finetuning script supports the following input file formats: `csv`, `tsv` and `jsonl`(one json per line). By default, the script expects the following column names (for `tsv`, `csv`) / key names (for `jsonl`):
+
+* For single sequence classification:
+    * `sentence1` - Input sequence
+    * `label` - Classification label (Optional for `test` files)
+  
+* For double sequence classification:
+    * `sentence1` - First input sequence
+    * `sentence2` - Second input sequence
+    * `label` - Classification label (Optional for `test` files)
+
+You can specify custom column / key names using the flags `--sentence1_key <key_name>`, `--sentence2_key <key_name>`, `--label_key <key_name>` to `sequence_classification.py`. To view sample input files for all supported formats, see the files **[here](sample_inputs/).**
+
+## Training & Evaluation
+
+To see list of all available options, do `python sequence_classification.py -h`. There are two ways to provide input data files to the script:
+
+* with flag `--dataset_dir <path>` where `<path>` points to the directory containing files with prefix `train`, `validation` and `test`.
+* with flags `--train_file <path>` / `--train_file <path>` / `--validation_file <path>` / `--test_file <path>`.
+
+For the following commands, we are going to use the `--dataset_dir <path>` to provide input files.
+
+
+### Finetuning
+For finetuning on single GPU, a minimal example is as follows:
+
+```bash
+$ python ./sequence_classification.py \
+    --model_name_or_path "csebuetnlp/banglabert" \
+    --dataset_dir "sample_inputs/single_sequence/jsonl" \
+    --output_dir "outputs/" \
+    --learning_rate=2e-5 \
+    --warmup_ratio 0.1 \
+    --gradient_accumulation_steps 2 \
+    --weight_decay 0.1 \
+    --lr_scheduler_type "linear"  \
+    --per_device_train_batch_size=16 \
+    --per_device_eval_batch_size=16 \
+    --max_seq_length 512 \
+    --logging_strategy "epoch" \
+    --save_strategy "epoch" \
+    --evaluation_strategy "epoch" \
+    --num_train_epochs=3 \ 
+    --do_train --do_eval
+```
+For a detailed example, refer to **[trainer.sh](trainer.sh).**
+
+
+### Evaluation
+* To calculate metrics on test set / inference on raw data, use the following snippet:
+
+```bash
+$ python ./sequence_classification.py \
+    --model_name_or_path <path/to/trained/model> \
+    --dataset_dir "sample_inputs/single_sequence/jsonl" \
+    --output_dir "outputs/" \
+    --per_device_eval_batch_size=16 \
+    --overwrite_output_dir \
+    --do_predict
+```
+For a detailed example, refer to **[evaluate.sh](evaluate.sh).**

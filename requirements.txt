@@ -1,0 +1,5 @@
+sentencepiece != 0.1.92
+protobuf
+datasets==1.11.0
+seqeval==1.2.2
+git+https://github.com/csebuetnlp/normalizer
