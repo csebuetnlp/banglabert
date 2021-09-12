@@ -30,7 +30,7 @@ We are also releasing the Bangla Natural Language Inference (NLI) dataset introd
 
 For installing the necessary requirements, use the following snippet
 ```bash
-$ git clone https://https://github.com/csebuetnlp/banglabert
+$ git clone https://github.com/csebuetnlp/banglabert
 $ cd banglabert/
 $ conda create python==3.7.9 pytorch==1.8.1 torchvision==0.9.1 torchaudio==0.8.0 cudatoolkit=10.2 -c pytorch -p ./env
 $ conda activate ./env # or source activate ./env (for older versions of anaconda)
