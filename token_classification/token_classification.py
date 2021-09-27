@@ -293,15 +293,24 @@ def main():
             f"model ({tokenizer.model_max_length}). Using max_seq_length={tokenizer.model_max_length}."
         )
     max_seq_length = min(data_args.max_seq_length, tokenizer.model_max_length)
+
+    if data_args.do_normalize:
+        def normalize_example(example):
+            for i, token in enumerate(example[data_args.tokens_key]):
+                normalized_token = normalize(token)
+                if len(normalized_token) > 0:
+                    example[data_args.tokens_key][i] = normalized_token
+
+            return example
+
+        raw_datasets = raw_datasets.map(
+            normalize_example,
+            desc="Running normalization on dataset",
+            load_from_cache_file=not data_args.overwrite_cache
+        )
     
     # Tokenize all texts and align the labels with them.
     def tokenize_and_align_labels(examples):
-        if data_args.do_normalize:
-            for i, tokens in enumerate(examples[data_args.tokens_key]):
-                for j, token in enumerate(tokens):
-                    normalized_token = normalize(token)
-                    if len(normalized_token) > 0:
-                        examples[data_args.tokens_key][i][j] = normalized_token
         
         tokenized_inputs = tokenizer(
             examples[data_args.tokens_key],

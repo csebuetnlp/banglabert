@@ -299,24 +299,34 @@ def main():
             f"model ({tokenizer.model_max_length}). Using max_seq_length={tokenizer.model_max_length}."
         )
     max_seq_length = min(data_args.max_seq_length, tokenizer.model_max_length)
+
+    if data_args.do_normalize:
+        normalization_kwargs = {
+            "unicode_norm": data_args.unicode_norm,
+            "punct_replacement": " " if data_args.remove_punct else None,
+            "url_replacement": " " if data_args.remove_urls else None,
+            "emoji_replacement": " " if data_args.remove_emoji else None
+        }
+
+        def normalize_example(example):
+            l = example[data_args.sentence1_key]
+            example[data_args.sentence1_key] = normalize(l, **normalization_kwargs)
+
+            if data_args.sentence2_key in example:
+                l = example[data_args.sentence2_key]
+                example[data_args.sentence2_key] = normalize(l, **normalization_kwargs)
+
+            return example
+
+        raw_datasets = raw_datasets.map(
+            normalize_example,
+            desc="Running normalization on dataset",
+            load_from_cache_file=not data_args.overwrite_cache
+        )
+
     
     def preprocess_function(examples):
-        # Tokenize the texts
-        if data_args.do_normalize:
-            normalization_kwargs = {
-                "unicode_norm": data_args.unicode_norm,
-                "punct_replacement": " " if data_args.remove_punct else None,
-                "url_replacement": " " if data_args.remove_urls else None,
-                "emoji_replacement": " " if data_args.remove_emoji else None
-            }
-
-            for i, l in enumerate(examples[data_args.sentence1_key]):
-                examples[data_args.sentence1_key][i] = normalize(l, **normalization_kwargs)
-            
-            if data_args.sentence2_key in examples:
-                for i, l in enumerate(examples[data_args.sentence2_key]):
-                    examples[data_args.sentence2_key][i] = normalize(l, **normalization_kwargs)
-                
+        # Tokenize the texts   
         args = (
             (examples[data_args.sentence1_key],) if data_args.sentence2_key not in examples else (examples[data_args.sentence1_key], examples[data_args.sentence2_key])
         )
