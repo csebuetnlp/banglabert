@@ -333,7 +333,7 @@ def main():
         result = tokenizer(*args, padding=padding, max_length=max_seq_length, truncation=True)
 
         if label_to_id is not None and data_args.label_key in examples:
-            result["label"] = [(label_to_id[l] if l != -1 else -1) for l in examples[data_args.label_key]]
+            result["label"] = [label_to_id[l] for l in examples[data_args.label_key]]
 
         return result
 
@@ -386,7 +386,7 @@ def main():
         preds = np.argmax(preds, axis=1)
 
         for m in required_metrics:
-            kwargs = {"average": "weighted"} if m.name in average_required else {} 
+            kwargs = {"average": "macro"} if m.name in average_required else {} 
             r = m.compute(
                 predictions=preds,
                 references=p.label_ids,

@@ -390,8 +390,6 @@ def main():
             y_pred=true_predictions,
             output_dict=True
         )
-        report.pop("macro avg")
-        report.pop("micro avg")
         
         scores = {
             type_name: {
