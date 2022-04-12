@@ -17,7 +17,7 @@ This repository contains the official release of the model **"BanglaBERT"** and 
 
 ## Models
 
-We are releasing a slightly better checkpoint than the one reported in the paper, pretrained with 27.5 GB data, more code switched and code mixed texts, and pretrained further for 2.5M steps. The pretrained model checkpoint is available **[here](https://huggingface.co/csebuetnlp/banglabert)**. To use this model for the supported downstream tasks in this repository see **[Training & Evaluation](#training--evaluation).**
+The pretrained model checkpoint is available **[here](https://huggingface.co/csebuetnlp/banglabert)**. To use this model for the supported downstream tasks in this repository see **[Training & Evaluation](#training--evaluation).**
 
 
 ***Note:*** This model was pretrained using a ***specific normalization pipeline*** available **[here](https://github.com/csebuetnlp/normalizer)**. All finetuning scripts in this repository uses this normalization by default. If you need to adapt the pretrained model for a different task make sure ***the text units are normalized using this pipeline before tokenizing*** to get best results. A basic example is available at the **[model page](https://huggingface.co/csebuetnlp/banglabert).**
