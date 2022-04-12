@@ -1,6 +1,6 @@
 # BanglaBERT
 
-This repository contains the official release of the model **"BanglaBERT"** and associated downstream finetuning code and datasets introduced in the paper titled [**"BanglaBERT: Combating Embedding Barrier in Multilingual Models for Low-Resource Language Understanding"**](https://arxiv.org/abs/2101.00204).
+This repository contains the official release of the model **"BanglaBERT"** and associated downstream finetuning code and datasets introduced in the paper titled [**"BanglaBERT: Combating Embedding Barrier in Multilingual Models for Low-Resource Language Understanding"**](https://arxiv.org/abs/2101.00204) accpeted in *Findings of the Annual Conference of the North American Chapter of the Association for Computational Linguistics: NAACL-2022*.
 
 ## Table of Contents
 
@@ -64,7 +64,26 @@ To use the pretrained model for finetuning / inference on different downstream t
 
 ## Benchmarks
  
-![scores](figs/scores.png)
+* Zero-shot cross-lingual transfer-learning
+
+|     Model          |   Params   |     SC (macro-F1)     |      NLI (accuracy)     |    NER  (micro-F1)   |   QA (EM/F1)   |   BangLUE score |
+|----------------|-----------|-----------|-----------|-----------|-----------|-----------|
+|[mBERT](https://huggingface.co/bert-base-multilingual-cased) | 180M  |  -    | 62.22 | 39.27 | 59.01/64.18 |  50.35 |
+|[XLM-R (base)](https://huggingface.co/xlm-roberta-base) |  270M   |     -   | 72.18 | 45.37 | 55.03/61.83 |  55.29 |
+|[XLM-R (large)](https://huggingface.co/xlm-roberta-large) | 550M  |     -  | 78.16 | 57.74 | 71.13/77.70 |  70.74 |
+
+* Supervised fine-tuning
+
+|     Model          |   Params   |     SC (macro-F1)     |      NLI (accuracy)     |    NER  (micro-F1)   |   QA (EM/F1)   |   BangLUE score |
+|----------------|-----------|-----------|-----------|-----------|-----------|-----------|
+|[mBERT](https://huggingface.co/bert-base-multilingual-cased) | 180M  | 67.59 | 75.13 | 68.97 | 67.12/72.64 | 70.29 |
+|[XLM-R (base)](https://huggingface.co/xlm-roberta-base) |  270M   | 69.54 | 78.46 | 73.32 | 68.09/74.27  | 72.82 |        
+|[XLM-R (large)](https://huggingface.co/xlm-roberta-large) | 550M  | 70.97 | 82.40 | 78.39 | 73.15/79.06 | 76.79 |
+|[sahajBERT](https://huggingface.co/neuropark/sahajBERT) | 18M | 71.12 | 76.92 | 70.94 | 65.48/70.69 | 71.03 |
+|[BanglaBERT](https://huggingface.co/csebuetnlp/banglabert) | 110M | 72.89 | 82.80 | 77.78 | 72.63/79.34 | **77.09** |
+
+
+
 
 The benchmarking datasets are as follows:
 * **SC:** **[Sentiment Classification](https://aclanthology.org/2021.findings-emnlp.278)**
