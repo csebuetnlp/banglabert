@@ -24,7 +24,9 @@ We are releasing a slightly better checkpoint than the one reported in the paper
 
 ## Datasets
 
-We are also releasing the Bangla Natural Language Inference (NLI) dataset introduced in the paper. The dataset can be found **[here](https://huggingface.co/datasets/csebuetnlp/xnli_bn)**.
+We are also releasing the Bangla Natural Language Inference (NLI) and Bangla Question Answering (QA) datasets introduced in the paper. 
+- [**NLI**](https://huggingface.co/datasets/csebuetnlp/xnli_bn)
+- [**QA**](https://huggingface.co/datasets/csebuetnlp/squad_bn)
 
 ## Setup
 
@@ -54,27 +56,22 @@ To use the pretrained model for finetuning / inference on different downstream t
   - For token tagging / classification tasks such as
     - Named Entity Recognition (NER)
     - Parts of Speech Tagging (PoS) etc.
+- **[Question Answering](question_answering/).**
+    - For tasks such as,
+      - Extractive Question Answering
+      - Open-domain Question Answering
+
 
 ## Benchmarks
  
-|             |   SC   |  EC   |  DC   |  NER     | NLI      |
-|-------------|--------|-------|-------|----------|----------|
-|`Metrics`      |   `Accuracy` | `F1*`  | `Accuracy` | `F1 (Entity)*`  | `Accuracy` |  
-|[mBERT](https://huggingface.co/bert-base-multilingual-cased)        | 83.39  | 56.02 | 98.64 | 67.40    |  75.40   |
-|[XLM-R](https://huggingface.co/xlm-roberta-base)        | 89.49  | 66.70 | 98.71 | 70.63    |   76.87  |    
-|[sagorsarker/bangla-bert-base](https://huggingface.co/sagorsarker/bangla-bert-base) |  87.30  |  61.51  |  98.79   |  70.97   |   70.48     |
-[monsoon-nlp/bangla-electra](https://huggingface.co/monsoon-nlp/bangla-electra)  |  73.54  | 34.55  | 97.64     | 52.57   |   63.48   |
-|***BanglaBERT***   | **92.18** | **74.27** | **99.07** | **72.18** | **82.94**|
-
-`*` - Weighted Average
+![scores](figs/scores.png)
 
 The benchmarking datasets are as follows:
-* **SC:** **[Sentiment Classification](https://ieeexplore.ieee.org/document/8554396/)**
-* **EC:** **[Emotion Classification](https://aclanthology.org/2021.naacl-srw.19/)**
-* **DC:** **[Document Classification](https://arxiv.org/abs/2005.00085)**
-* **NER:** **[Named Entity Recognition](https://content.iospress.com/articles/journal-of-intelligent-and-fuzzy-systems/ifs179349)**
+* **SC:** **[Sentiment Classification](https://aclanthology.org/2021.findings-emnlp.278)**
+* **NER:** **[Named Entity Recognition](https://multiconer.github.io/competition)**
 * **NLI:** **[Natural Language Inference](#datasets)**
-
+* **QA:** **[Question Answering](#datasets)**
+  
 ## Acknowledgements
 
 We would like to thank [Intelligent Machines](https://bd.linkedin.com/company/intelligentmachines) and [Google TFRC Program](https://sites.research.google/trc/) for providing cloud support for pretraining the models.
