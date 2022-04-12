@@ -1,6 +1,7 @@
 # BanglaBERT
 
-This repository contains the official release of the model **"BanglaBERT"** and associated downstream finetuning code and datasets introduced in the paper titled [**"BanglaBERT: Combating Embedding Barrier in Multilingual Models for Low-Resource Language Understanding"**](https://arxiv.org/abs/2101.00204) accpeted in *Findings of the Annual Conference of the North American Chapter of the Association for Computational Linguistics: NAACL-2022*.
+This repository contains the official release of the model **"BanglaBERT"** and associated downstream finetuning code and datasets introduced in the paper titled [**"BanglaBERT: Language Model Pretraining and Benchmarks for
+Low-Resource Language Understanding Evaluation in Bangla"**](https://arxiv.org/abs/2101.00204) accpeted in *Findings of the Annual Conference of the North American Chapter of the Association for Computational Linguistics: NAACL-2022*.
 
 ## Table of Contents
 
