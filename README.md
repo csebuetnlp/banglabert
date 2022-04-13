@@ -1,7 +1,7 @@
 # BanglaBERT
 
 This repository contains the official release of the model **"BanglaBERT"** and associated downstream finetuning code and datasets introduced in the paper titled [**"BanglaBERT: Language Model Pretraining and Benchmarks for
-Low-Resource Language Understanding Evaluation in Bangla"**](https://arxiv.org/abs/2101.00204) accpeted in *Findings of the Annual Conference of the North American Chapter of the Association for Computational Linguistics: NAACL-2022*.
+Low-Resource Language Understanding Evaluation in Bangla"**](https://arxiv.org/abs/2101.00204) accpeted in *Findings of the Annual Conference of the North American Chapter of the Association for Computational Linguistics: NAACL 2022*.
 
 ## Table of Contents
 
@@ -105,12 +105,19 @@ Contents of this repository are restricted to non-commercial research purposes o
 ## Citation
 If you use any of the datasets, models or code modules, please cite the following paper:
 ```
-@article{bhattacharjee2021banglabert,
-  author    = {Abhik Bhattacharjee and Tahmid Hasan and Kazi Samin and Md Saiful Islam and M. Sohel Rahman and Anindya Iqbal and Rifat Shahriyar},
-  title     = {BanglaBERT: Combating Embedding Barrier in Multilingual Models for Low-Resource Language Understanding},
-  journal   = {CoRR},
-  volume    = {abs/2101.00204},
-  year      = {2021},
+@inproceedings{bhattacharjee-etal-2022-banglabert,
+    title     = {BanglaBERT: Lagnuage Model Pretraining and Benchmarks for Low-Resource Language Understanding Evaluation in Bangla},
+    author = "Bhattacharjee, Abhik  and
+      Hasan, Tahmid  and
+      Mubasshir, Kazi  and
+      Islam, Md. Saiful  and
+      Uddin, Wasi Ahmad  and
+      Iqbal, Anindya  and
+      Rahman, M. Sohel  and
+      Shahriyar, Rifat",
+      booktitle = "Findings of the North American Chapter of the Association for Computational Linguistics: NAACL 2022",
+      month = july,
+  year      = {2022},
   url       = {https://arxiv.org/abs/2101.00204},
   eprinttype = {arXiv},
   eprint    = {2101.00204}
