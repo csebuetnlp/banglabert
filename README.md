@@ -117,9 +117,9 @@ If you use any of the datasets, models or code modules, please cite the followin
       Shahriyar, Rifat",
       booktitle = "Findings of the North American Chapter of the Association for Computational Linguistics: NAACL 2022",
       month = july,
-  year      = {2022},
-  url       = {https://arxiv.org/abs/2101.00204},
-  eprinttype = {arXiv},
-  eprint    = {2101.00204}
+    year      = {2022},
+    url       = {https://arxiv.org/abs/2101.00204},
+    eprinttype = {arXiv},
+    eprint    = {2101.00204}
 }
 ```
