@@ -69,9 +69,9 @@ To use the pretrained model for finetuning / inference on different downstream t
 
 |     Model          |   Params   |     SC (macro-F1)     |      NLI (accuracy)     |    NER  (micro-F1)   |   QA (EM/F1)   |   BangLUE score |
 |----------------|-----------|-----------|-----------|-----------|-----------|-----------|
-|[mBERT](https://huggingface.co/bert-base-multilingual-cased) | 180M  |  -    | 62.22 | 39.27 | 59.01/64.18 |  50.35 |
-|[XLM-R (base)](https://huggingface.co/xlm-roberta-base) |  270M   |     -   | 72.18 | 45.37 | 55.03/61.83 |  55.29 |
-|[XLM-R (large)](https://huggingface.co/xlm-roberta-large) | 550M  |     -  | 78.16 | 57.74 | 71.13/77.70 |  70.74 |
+|[mBERT](https://huggingface.co/bert-base-multilingual-cased) | 180M  | 27.05 | 62.22 | 39.27 | 59.01/64.18 |  50.35 |
+|[XLM-R (base)](https://huggingface.co/xlm-roberta-base) |  270M   | 42.03 | 72.18 | 45.37 | 55.03/61.83 |  55.29 |
+|[XLM-R (large)](https://huggingface.co/xlm-roberta-large) | 550M  | 68.96 | 78.16 | 57.74 | 71.13/77.70 |  70.74 |
 
 * Supervised fine-tuning
 
