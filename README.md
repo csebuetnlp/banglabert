@@ -18,10 +18,14 @@ Low-Resource Language Understanding Evaluation in Bangla"**](https://arxiv.org/a
 
 ## Models
 
-The pretrained model checkpoint is available **[here](https://huggingface.co/csebuetnlp/banglabert)**. To use this model for the supported downstream tasks in this repository see **[Training & Evaluation](#training--evaluation).**
+The pretrained model checkpoints are available at [Huggingface model hub](https://huggingface.co/csebuetnlp).
 
+- [**BanglaBERT**](https://huggingface.co/csebuetnlp/banglabert)
+- [**BanglishBERT**](https://huggingface.co/csebuetnlp/banglishbert)
+  
+To use these models for the supported downstream tasks in this repository see **[Training & Evaluation](#training--evaluation).**
 
-***Note:*** This model was pretrained using a ***specific normalization pipeline*** available **[here](https://github.com/csebuetnlp/normalizer)**. All finetuning scripts in this repository uses this normalization by default. If you need to adapt the pretrained model for a different task make sure ***the text units are normalized using this pipeline before tokenizing*** to get best results. A basic example is available at the **[model page](https://huggingface.co/csebuetnlp/banglabert).**
+***Note:*** These models were pretrained using a ***specific normalization pipeline*** available **[here](https://github.com/csebuetnlp/normalizer)**. All finetuning scripts in this repository uses this normalization by default. If you need to adapt the pretrained model for a different task make sure ***the text units are normalized using this pipeline before tokenizing*** to get best results. A basic example is available at the **[model page](https://huggingface.co/csebuetnlp/banglabert).**
 
 ## Datasets
 
@@ -71,7 +75,8 @@ To use the pretrained model for finetuning / inference on different downstream t
 |----------------|-----------|-----------|-----------|-----------|-----------|-----------|
 |[mBERT](https://huggingface.co/bert-base-multilingual-cased) | 180M  | 27.05 | 62.22 | 39.27 | 59.01/64.18 |  50.35 |
 |[XLM-R (base)](https://huggingface.co/xlm-roberta-base) |  270M   | 42.03 | 72.18 | 45.37 | 55.03/61.83 |  55.29 |
-|[XLM-R (large)](https://huggingface.co/xlm-roberta-large) | 550M  | 68.96 | 78.16 | 57.74 | 71.13/77.70 |  70.74 |
+|[XLM-R (large)](https://huggingface.co/xlm-roberta-large) | 550M  | 49.49 | 78.13 | 56.48 | 71.13/77.70 |  66.59 |
+|[BanglishBERT](https://huggingface.co/csebuetnlp/banglishbert) | 110M | 48.39 | 75.26 | 55.56 | 72.87/78.63 | 66.14 |
 
 * Supervised fine-tuning
 
@@ -81,9 +86,8 @@ To use the pretrained model for finetuning / inference on different downstream t
 |[XLM-R (base)](https://huggingface.co/xlm-roberta-base) |  270M   | 69.54 | 78.46 | 73.32 | 68.09/74.27  | 72.82 |        
 |[XLM-R (large)](https://huggingface.co/xlm-roberta-large) | 550M  | 70.97 | 82.40 | 78.39 | 73.15/79.06 | 76.79 |
 |[sahajBERT](https://huggingface.co/neuropark/sahajBERT) | 18M | 71.12 | 76.92 | 70.94 | 65.48/70.69 | 71.03 |
+|[BanglishBERT](https://huggingface.co/csebuetnlp/banglishbert) | 110M | 70.61 | 80.95 | 76.28 | 72.43/78.40 | 75.73 |
 |[BanglaBERT](https://huggingface.co/csebuetnlp/banglabert) | 110M | 72.89 | 82.80 | 77.78 | 72.63/79.34 | **77.09** |
-
-
 
 
 The benchmarking datasets are as follows:
