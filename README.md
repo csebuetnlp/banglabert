@@ -113,17 +113,15 @@ If you use any of the datasets, models or code modules, please cite the followin
     title     = {BanglaBERT: Lagnuage Model Pretraining and Benchmarks for Low-Resource Language Understanding Evaluation in Bangla},
     author = "Bhattacharjee, Abhik  and
       Hasan, Tahmid  and
+      Uddin, Wasi Ahmad  and
       Mubasshir, Kazi  and
       Islam, Md. Saiful  and
-      Uddin, Wasi Ahmad  and
       Iqbal, Anindya  and
       Rahman, M. Sohel  and
       Shahriyar, Rifat",
       booktitle = "Findings of the North American Chapter of the Association for Computational Linguistics: NAACL 2022",
       month = july,
     year      = {2022},
-    url       = {https://arxiv.org/abs/2101.00204},
-    eprinttype = {arXiv},
-    eprint    = {2101.00204}
+    url       = {https://arxiv.org/abs/2101.00204}
 }
 ```
