@@ -35,7 +35,7 @@ We are also releasing the Bangla Natural Language Inference (NLI) and Bangla Que
 
 ## Setup
 
-For installing the necessary requirements, use the following snippet
+For installing the necessary requirements, use the following bash snippet
 ```bash
 $ git clone https://github.com/csebuetnlp/banglabert
 $ cd banglabert/
