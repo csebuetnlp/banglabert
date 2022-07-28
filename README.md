@@ -110,18 +110,22 @@ Contents of this repository are restricted to non-commercial research purposes o
 If you use any of the datasets, models or code modules, please cite the following paper:
 ```
 @inproceedings{bhattacharjee-etal-2022-banglabert,
-    title     = {BanglaBERT: Lagnuage Model Pretraining and Benchmarks for Low-Resource Language Understanding Evaluation in Bangla},
+    title = "{B}angla{BERT}: Language Model Pretraining and Benchmarks for Low-Resource Language Understanding Evaluation in {B}angla",
     author = "Bhattacharjee, Abhik  and
       Hasan, Tahmid  and
-      Uddin, Wasi Ahmad  and
-      Mubasshir, Kazi  and
-      Islam, Md. Saiful  and
+      Ahmad, Wasi  and
+      Mubasshir, Kazi Samin  and
+      Islam, Md Saiful  and
       Iqbal, Anindya  and
       Rahman, M. Sohel  and
       Shahriyar, Rifat",
-      booktitle = "Findings of the North American Chapter of the Association for Computational Linguistics: NAACL 2022",
-      month = july,
-    year      = {2022},
-    url       = {https://arxiv.org/abs/2101.00204}
+    booktitle = "Findings of the Association for Computational Linguistics: NAACL 2022",
+    month = jul,
+    year = "2022",
+    address = "Seattle, United States",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2022.findings-naacl.98",
+    pages = "1318--1327",
+    abstract = "In this work, we introduce BanglaBERT, a BERT-based Natural Language Understanding (NLU) model pretrained in Bangla, a widely spoken yet low-resource language in the NLP literature. To pretrain BanglaBERT, we collect 27.5 GB of Bangla pretraining data (dubbed {`}Bangla2B+{'}) by crawling 110 popular Bangla sites. We introduce two downstream task datasets on natural language inference and question answering and benchmark on four diverse NLU tasks covering text classification, sequence labeling, and span prediction. In the process, we bring them under the first-ever Bangla Language Understanding Benchmark (BLUB). BanglaBERT achieves state-of-the-art results outperforming multilingual and monolingual models. We are making the models, datasets, and a leaderboard publicly available at \url{https://github.com/csebuetnlp/banglabert} to advance Bangla NLP.",
 }
 ```
