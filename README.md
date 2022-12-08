@@ -1,7 +1,10 @@
 # BanglaBERT
 
 This repository contains the official release of the model **"BanglaBERT"** and associated downstream finetuning code and datasets introduced in the paper titled [**"BanglaBERT: Language Model Pretraining and Benchmarks for
-Low-Resource Language Understanding Evaluation in Bangla"**](https://aclanthology.org/2022.findings-naacl.98/) accepted in *Findings of the Association for Computational Linguistics: NAACL 2022*.
+Low-Resource Language Understanding Evaluation in Bangla"**](https://aclanthology.org/2022.findings-naacl.98/) published in *Findings of the Association for Computational Linguistics: NAACL 2022*.
+
+## Updates
+* The Bangla2B+ pretraining is now available upon request! See [here](#datasets).
 
 ## Table of Contents
 
@@ -32,6 +35,8 @@ To use these models for the supported downstream tasks in this repository see **
 We are also releasing the Bangla Natural Language Inference (NLI) and Bangla Question Answering (QA) datasets introduced in the paper. 
 - [**NLI**](https://huggingface.co/datasets/csebuetnlp/xnli_bn)
 - [**QA**](https://huggingface.co/datasets/csebuetnlp/squad_bn)
+
+Please fill out this [**Google Form**](https://forms.gle/qiEW8f7i6Bw3FmmQA) to request access to the Bangla2B+ pretraining corpus. 
 
 ## Setup
 
