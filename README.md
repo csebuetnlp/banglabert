@@ -95,7 +95,7 @@ To use the pretrained model for finetuning / inference on different downstream t
 |[sahajBERT](https://huggingface.co/neuropark/sahajBERT) | 18M | 71.12 | 76.92 | 70.94 | 65.48/70.69 | 71.03 |
 |[BanglishBERT](https://huggingface.co/csebuetnlp/banglishbert) | 110M | 70.61 | 80.95 | 76.28 | 72.43/78.40 | 75.73 |
 |[BanglaBERT](https://huggingface.co/csebuetnlp/banglabert) | 110M | 72.89 | 82.80 | 77.78 | 72.63/79.34 | 77.09 |
-|[BanglaBERT (large)](https://huggingface.co/csebuetnlp/banglabert_large) | 330M | 71.94 | 83.41 | 79.20 | 76.10/81.50 | **78.43** |
+|[BanglaBERT (large)](https://huggingface.co/csebuetnlp/banglabert_large) | 335M | 71.94 | 83.41 | 79.20 | 76.10/81.50 | **78.43** |
 
 
 The benchmarking datasets are as follows:
