@@ -1,10 +1,11 @@
 # BanglaBERT
 
-This repository contains the official release of the model **"BanglaBERT"** and associated downstream finetuning code and datasets introduced in the paper titled [**"BanglaBERT: Language Model Pretraining and Benchmarks for
+This repository contains the official release of the model **"BanglaBERT"** and associated downstream fine-tuning code and datasets introduced in the paper titled [**"BanglaBERT: Language Model Pretraining and Benchmarks for
 Low-Resource Language Understanding Evaluation in Bangla"**](https://aclanthology.org/2022.findings-naacl.98/) published in *Findings of the Association for Computational Linguistics: NAACL 2022*.
 
 ## Updates
-* The Bangla2B+ pretraining is now available upon request! See [here](#datasets).
+* We have released a large variant of BanglaBERT! Have a look [here](https://huggingface.co/csebuetnlp/banglabert_large).
+* The Bangla2B+ pretraining corpus is now available upon request! See [here](#datasets).
 
 ## Table of Contents
 
@@ -25,6 +26,7 @@ The pretrained model checkpoints are available at [Huggingface model hub](https:
 
 - [**BanglaBERT**](https://huggingface.co/csebuetnlp/banglabert)
 - [**BanglishBERT**](https://huggingface.co/csebuetnlp/banglishbert)
+- [**BanglaBERT (large)**](https://huggingface.co/csebuetnlp/banglabert_large)
   
 To use these models for the supported downstream tasks in this repository see **[Training & Evaluation](#training--evaluation).**
 
@@ -92,7 +94,8 @@ To use the pretrained model for finetuning / inference on different downstream t
 |[XLM-R (large)](https://huggingface.co/xlm-roberta-large) | 550M  | 70.97 | 82.40 | 78.39 | 73.15/79.06 | 76.79 |
 |[sahajBERT](https://huggingface.co/neuropark/sahajBERT) | 18M | 71.12 | 76.92 | 70.94 | 65.48/70.69 | 71.03 |
 |[BanglishBERT](https://huggingface.co/csebuetnlp/banglishbert) | 110M | 70.61 | 80.95 | 76.28 | 72.43/78.40 | 75.73 |
-|[BanglaBERT](https://huggingface.co/csebuetnlp/banglabert) | 110M | 72.89 | 82.80 | 77.78 | 72.63/79.34 | **77.09** |
+|[BanglaBERT](https://huggingface.co/csebuetnlp/banglabert) | 110M | 72.89 | 82.80 | 77.78 | 72.63/79.34 | 77.09 |
+|[BanglaBERT (large)](https://huggingface.co/csebuetnlp/banglabert_large) | 330M | 71.94 | 83.41 | 79.20 | 76.10/81.50 | **78.43** |
 
 
 The benchmarking datasets are as follows:
