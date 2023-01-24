@@ -4,6 +4,7 @@ This repository contains the official release of the model **"BanglaBERT"** and 
 Low-Resource Language Understanding Evaluation in Bangla"**](https://aclanthology.org/2022.findings-naacl.98/) published in *Findings of the Association for Computational Linguistics: NAACL 2022*.
 
 ## Updates
+* We have released [BanglaBERT (small)](https://huggingface.co/csebuetnlp/banglabert_small). It can be fine-tuned with as little as 4 GB VRAM!
 * We have released a large variant of BanglaBERT! Have a look [here](https://huggingface.co/csebuetnlp/banglabert_large).
 * The Bangla2B+ pretraining corpus is now available upon request! See [here](#datasets).
 
@@ -93,8 +94,9 @@ To use the pretrained model for finetuning / inference on different downstream t
 |[XLM-R (base)](https://huggingface.co/xlm-roberta-base) |  270M   | 69.54 | 78.46 | 73.32 | 68.09/74.27  | 72.82 |        
 |[XLM-R (large)](https://huggingface.co/xlm-roberta-large) | 550M  | 70.97 | 82.40 | 78.39 | 73.15/79.06 | 76.79 |
 |[sahajBERT](https://huggingface.co/neuropark/sahajBERT) | 18M | 71.12 | 76.92 | 70.94 | 65.48/70.69 | 71.03 |
-|[BanglishBERT](https://huggingface.co/csebuetnlp/banglishbert) | 110M | 70.61 | 80.95 | 76.28 | 72.43/78.40 | 75.73 |
-|[BanglaBERT](https://huggingface.co/csebuetnlp/banglabert) | 110M | 72.89 | 82.80 | 77.78 | 72.63/79.34 | 77.09 |
+|[BanglishBERT](https://huggingface.co/csebuetnlp/banglishbert) | 110M | 70.61 | 80.95 | 76.28 | 72.43/78.40 | *75.73* |
+|[BanglaBERT (small)](https://huggingface.co/csebuetnlp/banglabert_small) | 13M | 69.29 | 76.75 | 73.41 | 63.30/69.65 | *70.38* |
+|[BanglaBERT](https://huggingface.co/csebuetnlp/banglabert) | 110M | 72.89 | 82.80 | 77.78 | 72.63/79.34 | *77.09* |
 |[BanglaBERT (large)](https://huggingface.co/csebuetnlp/banglabert_large) | 335M | 71.94 | 83.41 | 79.20 | 76.10/81.50 | **78.43** |
 
 
