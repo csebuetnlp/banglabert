@@ -27,6 +27,7 @@ The pretrained model checkpoints are available at [Huggingface model hub](https:
 
 - [**BanglaBERT**](https://huggingface.co/csebuetnlp/banglabert)
 - [**BanglishBERT**](https://huggingface.co/csebuetnlp/banglishbert)
+- [**BanglaBERT (small)**](https://huggingface.co/csebuetnlp/banglabert_small)
 - [**BanglaBERT (large)**](https://huggingface.co/csebuetnlp/banglabert_large)
   
 To use these models for the supported downstream tasks in this repository see **[Training & Evaluation](#training--evaluation).**
