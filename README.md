@@ -6,7 +6,7 @@ Low-Resource Language Understanding Evaluation in Bangla"**](https://aclantholog
 ## Updates
 * We have released [BanglaBERT (small)](https://huggingface.co/csebuetnlp/banglabert_small). It can be fine-tuned with as little as 4 GB VRAM!
 * We have released a large variant of BanglaBERT! Have a look [here](https://huggingface.co/csebuetnlp/banglabert_large).
-* The Bangla2B+ pretraining corpus is now available upon request! See [here](#datasets).
+* The Bangla2B+ pretraining corpus is now available! See [here](#datasets).
 
 ## Table of Contents
 
