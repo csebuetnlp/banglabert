@@ -35,7 +35,7 @@ To use these models for the supported downstream tasks in this repository see **
 ***Note:*** These models were pretrained using a ***specific normalization pipeline*** available **[here](https://github.com/csebuetnlp/normalizer)**. All finetuning scripts in this repository uses this normalization by default. If you need to adapt the pretrained model for a different task make sure ***the text units are normalized using this pipeline before tokenizing*** to get best results. A basic example is available at the **[model page](https://huggingface.co/csebuetnlp/banglabert).**
 
 ## Datasets
-- [**Bangla2B+ pretraining corpus**](https://huggingface.co/datasets/csebuetnlp/squad_bn](https://docs.google.com/uc?export=download&id=1ORPugFNIBo8JfmS92zIOPe06XuWn4t_d)
+- [**Bangla2B+ pretraining corpus**](https://docs.google.com/uc?export=download&id=1ORPugFNIBo8JfmS92zIOPe06XuWn4t_d)
 
 We are also releasing the Bangla Natural Language Inference (NLI) and Bangla Question Answering (QA) datasets introduced in the paper. 
 - [**NLI**](https://huggingface.co/datasets/csebuetnlp/xnli_bn)
